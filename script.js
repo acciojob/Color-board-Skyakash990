@@ -5,13 +5,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 		const box=document.createElement("div");
 		box.classList.add("square");
 
-		box.addEventListener("mouseenter",()=>{
+		box.addEventListener("mouseover",()=>{
 			box.classList.add("hovered");
 			box.style.backgroundColor="none";
 			setTimeout(()=>{
 				box.classList.remove("hovered");
 			},1000);
 		});
+		
 		board.appendChild(box);
 	}
 })
