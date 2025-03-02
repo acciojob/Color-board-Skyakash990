@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 		box.addEventListener("mouseenter",()=>{
 			box.classList.add("hovered");
+			box.style.backgroundColor="none";
 			setTimeout(()=>{
 				box.classList.remove("hovered");
 			},1000);
